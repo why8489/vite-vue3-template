@@ -1,0 +1,92 @@
+{
+  "name": "vite-vue3-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build-tsc": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "format": "prettier --write ./src",
+    "lint": "eslint ./src --ext .vue,.js,.ts",
+    "lint-fix": "eslint --fix ./src --ext .vue,.js,.ts",
+    "prepare": "husky install",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/XPoet/vite-vue3-starter.git"
+  },
+  "keywords": [
+    "Vite",
+    "Vue3",
+    "TypeScript",
+    "Starter"
+  ],
+  "author": "XPoet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XPoet/vite-vue3-starter/issues"
+  },
+  "homepage": "https://github.com/XPoet/vite-vue3-starter#readme",
+  "lint-staged": {
+    "*.{vue,js,ts}": "eslint --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint"
+  },
+  "dependencies": {
+    "axios": "^1.1.2",
+    "babel-eslint": "^10.1.0",
+    "element-plus": "^2.2.17",
+    "node-sass": "^7.0.3",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.5",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/jest": "^29.1.2",
+    "@types/node": "^18.8.3",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "@vue/test-utils": "^2.0.0-rc.18",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.1.1",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^9.6.0",
+    "husky": "^8.0.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^7.3.1",
+    "stylus": "^0.59.0",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.0",
+    "vue-jest": "^5.0.0-alpha.10",
+    "vue-tsc": "^0.40.4"
+  }
+}
